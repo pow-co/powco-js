@@ -2,12 +2,21 @@
 
 `npm install --save powco`
 
-## Broadcast Transactions
+## Broadcast Transaction
 
 ```
 import { broadcast } from 'powco'
 
-const txid = await broadcast(tx_hex)
+const txid = await broadcast(txhex)
+
+```
+
+## Fetch Transaction
+
+```
+import { fetch } from 'powco'
+
+const txhex = await fetch(txid)
 
 ```
 

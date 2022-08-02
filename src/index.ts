@@ -11,3 +11,9 @@ export async function broadcast(txhex: string): Promise<string> {
 
 }
 
+export async function fetch(txid: string): Promise<string> {
+
+  return run.blockchain.fetch(txid)
+
+}
+
