@@ -17,3 +17,9 @@ export async function fetch(txid: string): Promise<string> {
 
 }
 
+import { EventEmitter } from 'events'
+
+import { Socket } from './socket'
+
+export const stream = new Socket();
+
